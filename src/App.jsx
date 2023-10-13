@@ -173,10 +173,11 @@ function App() {
 
   return (
     <>
+      {" "}
+      {isCompleted && (
+        <Confetti width={window.innerWidth} height={window.innerHeight} />
+      )}
       <div className="container">
-        {isCompleted && result > 2 && (
-          <Confetti width={window.innerWidth} height={window.innerHeight} />
-        )}
         {isMainPage ? (
           <StartPage changeToQuizPage={changeToQuizPage} />
         ) : (

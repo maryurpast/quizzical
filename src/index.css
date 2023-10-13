@@ -8,13 +8,7 @@ body {
   font-size: 16px;
   font-family: "Karla", sans-serif;
   color: #293264;
-  position: relative;
-}
-
-@media (max-width: 500px) {
-  .container {
-    padding: 1em 3em;
-  }
+  background-color: #f5f7fb;
 }
 
 .container {
@@ -22,7 +16,21 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   padding: 2em 4.6em;
-  background-color: #f5f7fb;
+  position: relative;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 1em 1.5em;
+  }
+}
+
+@media (min-width: 950px) {
+  .container {
+    -webkit-box-shadow: 1px 1px 39px -35px rgba(41, 50, 100, 1);
+    -moz-box-shadow: 1px 1px 39px -35px rgba(41, 50, 100, 1);
+    box-shadow: 1px 1px 39px -35px rgba(41, 50, 100, 1);
+  }
 }
 
 .container::after {
@@ -30,7 +38,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: -1;
 }
 
 .container::before {
@@ -38,7 +46,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 1;
+  z-index: -1;
 }
 
 /*** Typography ***/
