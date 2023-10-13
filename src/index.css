@@ -21,7 +21,7 @@ body {
 
 @media (max-width: 500px) {
   .container {
-    padding: 1em 1.5em;
+    padding: 1em 2em;
   }
 }
 
@@ -96,7 +96,7 @@ form.test {
   padding: 1.2em 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-gap: 1em;
+  grid-gap: 1em 2em;
 }
 
 form.test::after {
