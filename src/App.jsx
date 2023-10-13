@@ -123,7 +123,7 @@ function App() {
         <div className="result-message">
           <p>You scored {result}/5 correct answers</p>
           <button
-            className="prime-btn"
+            className="prime-btn secondary-button"
             key={nanoid()}
             onClick={() => {
               getQuiz();
